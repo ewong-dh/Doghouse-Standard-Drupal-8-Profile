@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c2509ae3ea123cd69b9c4fdc167f5c0",
+    "content-hash": "60a0a43a109e80b0e2c07a720f6501fc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -197,28 +197,29 @@
         },
         {
             "name": "composer/semver",
-            "version": "1.7.2",
+            "version": "3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "647490bbcaf7fc4891c58f47b825eb99d19c377a"
+                "reference": "a02fdf930a3c1c3ed3a49b5f63859c0c20e10464"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/647490bbcaf7fc4891c58f47b825eb99d19c377a",
-                "reference": "647490bbcaf7fc4891c58f47b825eb99d19c377a",
+                "url": "https://api.github.com/repos/composer/semver/zipball/a02fdf930a3c1c3ed3a49b5f63859c0c20e10464",
+                "reference": "a02fdf930a3c1c3ed3a49b5f63859c0c20e10464",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.3.2 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.5 || ^5.0.5"
+                "phpstan/phpstan": "^0.12.54",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-main": "3.x-dev"
                 }
             },
             "autoload": {
@@ -268,7 +269,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-03T15:47:16+00:00"
+            "time": "2020-11-13T08:59:24+00:00"
         },
         {
             "name": "cweagans/composer-patches",
@@ -1047,21 +1048,21 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.0.10",
+            "version": "9.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "8a0cdab9f6a0e2f48b4886b31d050dca034e6049"
+                "reference": "de8c1769ea3d8b640e1a35c9228880d0b74ca4cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/8a0cdab9f6a0e2f48b4886b31d050dca034e6049",
-                "reference": "8a0cdab9f6a0e2f48b4886b31d050dca034e6049",
+                "url": "https://api.github.com/repos/drupal/core/zipball/de8c1769ea3d8b640e1a35c9228880d0b74ca4cc",
+                "reference": "de8c1769ea3d8b640e1a35c9228880d0b74ca4cc",
                 "shasum": ""
             },
             "require": {
                 "asm89/stack-cors": "^1.1",
-                "composer/semver": "^1.0",
+                "composer/semver": "^3.0",
                 "doctrine/annotations": "^1.4",
                 "doctrine/reflection": "^1.1",
                 "egulias/email-validator": "^2.0",
@@ -1083,7 +1084,7 @@
                 "laminas/laminas-feed": "^2.12",
                 "masterminds/html5": "^2.1",
                 "pear/archive_tar": "^1.4.11",
-                "php": "^7.3",
+                "php": ">=7.3.0",
                 "psr/log": "^1.0",
                 "stack/builder": "^1.0",
                 "symfony-cmf/routing": "^2.1",
@@ -1141,6 +1142,7 @@
                 "drupal/core-file-cache": "self.version",
                 "drupal/core-file-security": "self.version",
                 "drupal/core-filesystem": "self.version",
+                "drupal/core-front-matter": "self.version",
                 "drupal/core-gettext": "self.version",
                 "drupal/core-graph": "self.version",
                 "drupal/core-http-foundation": "self.version",
@@ -1187,6 +1189,7 @@
                 "drupal/migrate_drupal_ui": "self.version",
                 "drupal/minimal": "self.version",
                 "drupal/node": "self.version",
+                "drupal/olivero": "self.version",
                 "drupal/options": "self.version",
                 "drupal/page_cache": "self.version",
                 "drupal/path": "self.version",
@@ -1280,6 +1283,9 @@
                     "lib/Drupal/Core/DrupalKernelInterface.php",
                     "lib/Drupal/Core/Installer/InstallerRedirectTrait.php",
                     "lib/Drupal/Core/Site/Settings.php"
+                ],
+                "files": [
+                    "includes/bootstrap.inc"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1287,25 +1293,25 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-12-03T20:54:37+00:00"
+            "time": "2020-12-02T18:11:58+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "8.9.11",
+            "version": "9.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "c902d07cb49ef73777e2b33a39e54c2861a8c81d"
+                "reference": "7b125516d6568b888945ee03ac2636dcced76e8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/c902d07cb49ef73777e2b33a39e54c2861a8c81d",
-                "reference": "c902d07cb49ef73777e2b33a39e54c2861a8c81d",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/7b125516d6568b888945ee03ac2636dcced76e8d",
+                "reference": "7b125516d6568b888945ee03ac2636dcced76e8d",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1 || ^2",
-                "php": ">=7.0.8"
+                "php": ">=7.3.0"
             },
             "conflict": {
                 "drupal-composer/drupal-scaffold": "*"
@@ -1334,7 +1340,7 @@
             "keywords": [
                 "drupal"
             ],
-            "time": "2020-08-07T22:30:30+00:00"
+            "time": "2020-08-07T22:30:13+00:00"
         },
         {
             "name": "drupal/ctools",
